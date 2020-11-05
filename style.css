@@ -119,3 +119,17 @@ a {
   cursor: pointer;
   background-color: rgba(208, 207, 207, 0.098);
 }
+
+#big-article-container {
+  height: 60vh;
+  max-height: 560px;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 80px;
+  padding: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 8px;
+  row-gap: 8px;
+}
