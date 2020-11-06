@@ -210,7 +210,7 @@ a {
   letter-spacing: .001em;
 }
 
-#news-heading {
+.lone-heading {
   margin-top: 30px;
   width: 66%;
   max-width: 1192px;
