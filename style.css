@@ -212,8 +212,8 @@ a {
 
 .lone-heading {
   margin-top: 30px;
-  width: 66%;
-  max-width: 1192px;
+  width: 1192px;
+  padding-left: 24px;
   align-self: center;
 }
 
@@ -228,8 +228,53 @@ h2:hover {
 }
 
 .medium-article-container {
-  width: 66%;
-  max-width: 1192px;
+  width: 1192px;
   align-self: center;
   display: flex;
+  flex-wrap: wrap;
+}
+
+.medium-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  flex-basis: 25%;
+  max-width: 25%;
+  padding: 12px;
+}
+
+.med-art-img {
+  width: 270px;
+  height: 135px;
+}
+
+#products .med-art-img {
+  height: 200px;
+}
+
+.med-art-title {
+  font-size: 100%;
+  font-weight: 800;
+  word-wrap: break-word;
+}
+
+.med-art-title:hover {
+  color: #ff4422;
+}
+
+.med-art-footer {
+  color: #bbbbbb;
+  font-size: 10pt;
+  margin:  5px 0px 0px 0px;
+}
+
+.med-art-footer:hover {
+  color: #8a8989;
+  cursor: pointer;
+}
+
+.med-art-footer span {
+  color: #c9c9c9;
+  text-decoration: line-through;
 }
