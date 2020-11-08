@@ -352,3 +352,53 @@ h2:hover {
   border-top: 1px solid #ffcdc2de;
 }
 
+#large-article-container {
+  display: flex;
+  flex-direction: row;
+  width: 1192px;
+  align-self: center;
+}
+
+.large-article {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 33%;
+}
+
+.large-article:first-child .header-container {
+  background-image: url(images/pak_whatsapp.jpg);
+}
+
+.large-article:nth-child(2) .header-container {
+  background-image: url(images/car_field.jpg);
+}
+
+.large-article:nth-child(3) .header-container {
+  background-image: url(images/stadia.jpg);
+}
+
+.large-article:nth-child(4) .header-container {
+  background-image: url(images/panda_calendar.jpg);
+}
+
+.large-article:nth-child(5) .header-container {
+  background-image: url(images/paint.jpg);
+}
+
+.large-article:nth-child(6) .header-container {
+  background-image: url(images/google.jpg);
+}
+
+.large-article:nth-child(7) .header-container {
+  background-image: url(images/bitcoin.jpg);
+} 
+
+.large-article:nth-child(8) .header-container {
+  background-image: url(images/hummer.jpg);
+}
+
+.large-article:last-child .header-container {
+  background-image: url(images/watch_dogs.jpeg);
+}
+
