@@ -477,3 +477,44 @@ h2:hover {
   font-weight: 800;
 }
 
+#page-footer-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 12px;
+  margin-top: 75px;
+}
+
+#page-footer-container a {
+  color: #aaaaaa;
+}
+
+#page-footer-container a:hover {
+  color: white;
+}
+
+#footnote-container {
+  background-color: black;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: center;
+}
+
+li {
+  margin: 0px 5px;
+  color: #aaaaaa;
+}
+
+li span {
+  color: white;
+}
+
+#link-list-container {
+  background-color: #131313;
+  padding: 15px 0px;
+}
+
