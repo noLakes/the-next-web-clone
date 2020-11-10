@@ -147,7 +147,9 @@ a {
 .big-article#main {
   grid-row: 1 / 3;
   grid-column: 1 / 3;
-  background-image: linear-gradient(180deg,rgba(235, 62, 62, 0.673)20%,rgba(0, 0, 0, 0.906) 100%), url(images/smoke-stack.png);
+  background-image: linear-gradient(180deg,rgba(255, 104, 104, 0.55)10%,rgba(0, 0, 0, 0.934)), 
+  radial-gradient(rgba(255, 107, 107, 0.817), rgba(255, 255, 255, 0.502)),
+  url(images/smoke-stack.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
