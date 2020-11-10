@@ -191,7 +191,7 @@ a {
   color: rgb(203, 203, 203);
 }
 
-.big-article .footer-tag {
+.footer-tag {
   color: #7e7979;
   font-size: 12px;
   margin: 5px 0px;
@@ -201,7 +201,7 @@ a {
   font-size: 54px;
 }
 
-.big-article .category {
+.category {
   color: white;
   margin: 5px 0px;
   text-transform: uppercase;
@@ -345,6 +345,10 @@ h2:hover {
   font-weight: 500;
 }
 
+.brand-container .bottom-container span {
+  color: #918e8ee2;
+}
+
 .brand-container .bottom-container p {
   font-size: 9pt;
   padding: 15px 3% 0px 7.5%;
@@ -355,6 +359,7 @@ h2:hover {
 #large-article-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   width: 1192px;
   align-self: center;
 }
@@ -364,41 +369,111 @@ h2:hover {
   flex-direction: column;
   box-sizing: border-box;
   width: 33%;
+  padding: 12px;
+  margin-bottom: 25px;
+}
+
+.large-article .lone-heading {
+  margin: 0px;
+  width: auto;
+  padding-left: 0px;
+  align-self: flex-start;
+}
+
+.large-article a {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1em;
+}
+
+.large-article a:hover {
+  color: rgb(203, 203, 203);
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: flex-start;
+  box-sizing: border-box;
+  padding: 12px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 276px;
 }
 
 .large-article:first-child .header-container {
-  background-image: url(images/pak_whatsapp.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.194) 40%, rgb(12, 3, 3)),url(images/pak_whatsapp.jpg);
 }
 
 .large-article:nth-child(2) .header-container {
-  background-image: url(images/car_field.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.194) 40%, rgb(12, 3, 3)),url(images/car_field.jpg);
 }
 
 .large-article:nth-child(3) .header-container {
-  background-image: url(images/stadia.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.194) 40%, rgb(12, 3, 3)),url(images/stadia.jpg);
 }
 
 .large-article:nth-child(4) .header-container {
-  background-image: url(images/panda_calendar.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.194) 40%, rgb(12, 3, 3)),url(images/panda_calendar.jpg);
 }
 
 .large-article:nth-child(5) .header-container {
-  background-image: url(images/paint.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.194) 40%, rgb(12, 3, 3)),url(images/paint.jpg);
 }
 
 .large-article:nth-child(6) .header-container {
-  background-image: url(images/google.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.194) 40%, rgb(12, 3, 3)),url(images/google.jpg);
 }
 
 .large-article:nth-child(7) .header-container {
-  background-image: url(images/bitcoin.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.194) 40%, rgb(12, 3, 3)),url(images/bitcoin.jpg);
 } 
 
 .large-article:nth-child(8) .header-container {
-  background-image: url(images/hummer.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.194) 40%, rgb(12, 3, 3)),url(images/hummer.jpg);
 }
 
 .large-article:last-child .header-container {
-  background-image: url(images/watch_dogs.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.194) 40%, rgb(12, 3, 3)),url(images/watch_dogs.jpeg);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 96px;
+  box-sizing: border-box;
+  background-color: #fff4f2;
+}
+
+.footer-container img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+}
+
+.latest-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding: 14px;
+}
+
+.latest-container h4 {
+  color: #ff4422;
+  font-weight: 300;
+  font-size: 12px;
+  margin: 0px;
+}
+
+.latest-container a {
+  color: #ff4422;
+  font-size: 14px;
+  margin: 5px 0px 0px 0px;
+  font-weight: 800;
 }
 
