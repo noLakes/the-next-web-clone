@@ -103,6 +103,10 @@ a {
   color: #131313;
 }
 
+#search-container button:last-child {
+  display: none;
+}
+
 #search-container button {
   height: 100%;
   background-color: white;
@@ -230,7 +234,7 @@ h2:hover {
 }
 
 .medium-article-container {
-  width: 1192px;
+  max-width: 1192px;
   align-self: center;
   display: flex;
   flex-wrap: wrap;
@@ -247,8 +251,10 @@ h2:hover {
 }
 
 .med-art-img {
-  width: 270px;
+  max-width: 270px;
+  width: 100%;
   height: 135px;
+  object-fit: cover;
 }
 
 #products .med-art-img {
@@ -282,7 +288,7 @@ h2:hover {
 }
 
 #funding-container {
-  width: 1192px;
+  max-width: 1192px;
   align-self: center;
   display: flex;
 }
@@ -310,14 +316,6 @@ h2:hover {
   color: #807674;
   font-size: 9pt;
   font-weight: 500;
-}
-
-.brand-container a {
-
-}
-
-.brand-container p {
-
 }
 
 .top-container img {
@@ -362,7 +360,7 @@ h2:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 1192px;
+  max-width: 1192px;
   align-self: center;
 }
 
@@ -518,5 +516,205 @@ li span {
 #link-list-container {
   background-color: #131313;
   padding: 15px 0px;
+}
+
+@media only screen and (max-width: 1192px) {
+  .lone-heading {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+
+  #nav-logo {
+    display: flex;
+    width: 10%;
+    height: auto;
+    object-fit: contain;
+    background-color: black;
+  }
+
+  #main img {
+    display: none;
+  }
+
+  #main a {
+    font-size: 46px;
+  }
+
+  .medium-article {
+    flex-basis: 33%;
+    max-width: 33%;
+  }
+
+  .med-art-img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .lone-heading {
+    width: 100%;
+  }
+
+  #funding-container {
+    width: 100%;
+  }
+  .brand-container {
+    width: 33%;
+  }
+
+  .brand-container:last-child {
+    display: none;
+  }
+
+  #large-article-container {
+    width: 100%;
+  }
+
+  .large-article {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #top-links-container {
+    display: none;
+  }
+
+  #nav-container {
+    height: 48px;
+  }
+
+  #search-left a {
+    display: none;
+  }
+
+  #search-right {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #search-container button:last-child {
+    display: flex;
+    height: 100%;
+  }
+
+  #search-container button img {
+    height: 40%;
+    align-self: center;
+    padding: 0px 10px;
+  }
+
+  #big-article-container {
+    height: 99vh;
+    max-height: none;
+    margin-top: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 0px;
+  }
+
+  .big-article {
+    padding: 10px;
+    height: 100%;
+  }
+
+  .big-article#main {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .big-article#second {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding-bottom: 20px;
+  }
+
+  .big-article#third {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  .big-article a, #main a {
+    font-size: 18px;
+  }
+
+  #nav-logo {
+    position: absolute;
+    z-index: 2;
+  }
+
+  .medium-article-container {
+    flex-direction: column;
+  }
+
+  .medium-article {
+    width: 100%;
+    height: 75px;
+    flex-basis: 75px;
+    flex-direction: column;
+    max-width: none;
+    font-size: 14px;
+    padding: 5px 0px;
+    margin: 4px 0px;
+  }
+
+  .med-art-img {
+    height: 75px;
+    width: 75px;
+    object-fit: cover;
+    position: absolute;
+    left: 20px;
+    z-index: 3;
+  }
+
+  .med-art-title, .med-art-footer {
+    margin-left: 100px;
+  }
+
+  .med-art-footer {
+    font-size: 12px;
+  }
+
+  #funding-container {
+    flex-direction: column;
+    width: 90%;
+    max-width: none;
+    box-sizing: border-box;
+    margin: 5px 0px;
+  }
+
+  .brand-container {
+    width: 100%;
+  }
+
+  .brand-container .bottom-container a,
+  .brand-container .bottom-container p {
+    padding-left: 0px;
+  }
+
+  .large-article {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .large-article .header-container {
+    height: 70vh;
+    max-height: 468px;
+  }
+
+  .large-article .footer-container {
+    justify-content: space-between;
+  }
+
+  .latest-container {
+    justify-content: center;
+  }
+
+  #products .med-art-img {
+    width: 75px;
+    height: 75px;
+  }
+
 }
 
